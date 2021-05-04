@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{display: flex;}
+
+body > #bg {
+    height: 100%;
+    width: 100%;
+background-image: url(markus-spiske-Fa0pTKuoDVY-unsplash.jpg);
+    clip-path: polygon(100% 0%, 100% 56%, 57% 100%, 0 100%, 0% 50%, 54% 0);
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@font-face{
+    font-weight: 100 900;
+    font-style: normal italic;
+}
+h1{
+    position: absolute;
+    text-transform: uppercase;
+    font-size:1.6rem;
+    font-weight: 600;
+    width: 100px;
+    font-family: sans-serif;
+    padding-left: 9vw;
+    padding-top: 13vh;
+}
+
+h1 div:nth-child(2){
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+h1 div:nth-child(3){
+    font-size: 2.7rem;
+    font-weight: 600;
+}
+h1 div:nth-child(4){
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+h1{
+    position: absolute;
+    bottom: 50px;
+    right: 150px;
+}
+
+nav {z-index: 5;
+padding-left: 2vw;
+padding-top: 2vh;}
+
+nav a {
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    background: white;
+    transition: .3s;
+    border: 2px solid black;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+nav li ul {
+    display: none;
+    position: absolute;
+}
+
+nav li:hover ul,
+li:focus-within ul {
+    display: initial;
+}
+
+a:focus {
+    background: black;
+    color: white;
+}
+a:hover{
+    background: orange;
+}
+
+h1 div{
+    width: 100px;
+    background-color: white;
+}
